@@ -52,7 +52,8 @@ function handleAssesment(data){
     else if(logs[i] === "Validated true"){
       formatted_data[currentKey].push("Validated true"); 
     }
-    else{
+    // else if logs[i] is not empty
+    else if(logs[i].length > 0){
       count++;
       formatted_data[currentKey].push(logs[i]);
     }
