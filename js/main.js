@@ -29,7 +29,9 @@ async function getLog(file, type) {
 }
 
 function handleAssesment(data){
+  console.log(data)
   let logs = data.split("\n");
+  console.log(logs)
   let formatted_data = {};
   let currentKey = "";
   let totalFiles = 0;
