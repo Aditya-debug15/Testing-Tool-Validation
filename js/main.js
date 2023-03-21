@@ -60,6 +60,7 @@ function handleAssesment(data){
   let stats = `Total Files: ${totalFiles} <br>
   ✖ ${count} problems (0 errors, ${count} warnings)`;
   formatted_data["FINAL_STATS"] = stats;
+  console.log(formatted_data)
   return formatted_data;
 }
 
@@ -418,5 +419,5 @@ window.toggleError = toggleError;
 
 await getLog("eslint.log", "eslint");
 await getLog("links.log", "https");
-await getLog("validate.log", "descriptor");
 await getLog("assesment.log", "assesment");
+await getLog("validate.log", "descriptor");
